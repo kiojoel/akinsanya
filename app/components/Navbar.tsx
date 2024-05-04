@@ -1,18 +1,7 @@
 "use client";
-import { Button } from "@/components/ui/button";
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-import { cn } from "@/lib/utils";
-import { Github, Linkedin, Menu, Newspaper, Twitter } from "lucide-react";
-import Image from "next/image";
+
+import { Github, Linkedin, Twitter } from "lucide-react";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ThemeToggle } from "./ThemeToggle";
@@ -67,54 +56,40 @@ export function Navbar() {
         ))}
       </div>
 
-      <div className="hidden align-center justify-center sm:flex ">
-        <Twitter className="mr-3 text-gray-500  hover:text-black  dark:hover:text-white hover:cursor-pointer" />
-        <Linkedin className="mr-3 text-gray-500  hover:text-black  dark:hover:text-white hover:cursor-pointer" />
-        <Github className="mr-3  text-gray-500  hover:text-black  dark:hover:text-white hover:cursor-pointer" />
-        <Newspaper className="mr-3 text-gray-500  hover:text-black  dark:hover:text-white hover:cursor-pointer" />
-        <div className="">
+      <div className=" flex align-center justify-center ">
+        <a
+          href="https://twitter.com/Akinsanya__Joel"
+          target="_blabk"
+          className="mr-3 text-gray-500  hover:text-black  dark:hover:text-white hover:cursor-pointer"
+        >
+          <Twitter />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/akinsanya-joel-1a5b51168/"
+          target="_blabk"
+          className="mr-3 text-gray-500  hover:text-black  dark:hover:text-white hover:cursor-pointer"
+        >
+          <Linkedin />
+        </a>
+        <a
+          href="https://github.com/kiojoel"
+          target="_blabk"
+          className="mr-3 text-gray-500  hover:text-black  dark:hover:text-white hover:cursor-pointer"
+        >
+          <Github />
+        </a>
+        {/* <a href="https://medium.com/@akinsanyajoel82" target="_blank">
+          <svg
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            className="w-8 h-8 mr-3 text-gray-500  hover:text-black  dark:hover:text-white hover:cursor-pointer"
+          >
+            <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
+          </svg>
+        </a> */}
+        <div>
           <ThemeToggle />
         </div>
-      </div>
-
-      <div className="sm:hidden">
-        <Sheet>
-          <SheetTrigger>
-            <Menu className=" text-gray-500 h-7 w-7 hover:text-black" />
-          </SheetTrigger>
-          <SheetContent>
-            <div className="mt-5 flex px-2 space-y-1 flex-col">
-              {navItems.map((item, index) => (
-                <Link
-                  key={index}
-                  href={item.href}
-                  className={cn(
-                    pathname == item.href
-                      ? "bg-muted"
-                      : "hover:bg-muted hover:bg-opacity-75",
-                    "group flex items-center px-2 py-2 text-sm font-medium rounded-md"
-                  )}
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
-            <div className="flex align-center justify-center space-x-8 ">
-              <Twitter className="mr-3 text-gray-500  hover:text-black  dark:hover:text-white hover:cursor-pointer" />
-              <Linkedin className="mr-3 text-gray-500  hover:text-black  dark:hover:text-white hover:cursor-pointer" />
-              <Github className="mr-3  text-gray-500  hover:text-black  dark:hover:text-white hover:cursor-pointer" />
-              <Newspaper className="mr-3 text-gray-500  hover:text-black  dark:hover:text-white hover:cursor-pointer" />
-              <div className="">
-                <ThemeToggle />
-              </div>
-            </div>
-            <SheetFooter className="mt-5">
-              <SheetClose asChild>
-                <Button type="submit">Close</Button>
-              </SheetClose>
-            </SheetFooter>
-          </SheetContent>
-        </Sheet>
       </div>
     </nav>
   );

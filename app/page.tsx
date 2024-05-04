@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <section className="max-w-7xl w-[70%] pl-7 md:px-10 mx-auto mt-8">
@@ -21,10 +23,12 @@ export default function Home() {
         user-friendly interfaces, I thrive on the challenge of pushing
         boundaries and creating impactful solutions.
       </p>
+
       <p className="text-xl text-muted-foreground mb-4">
         Let&apos;s collaborate and transform ideas into reality—connect with me
         to embark on exciting projects together.
       </p>
+
       <h5 className="font-semibold tracking-tight">Contact me</h5>
       <p className="text-sm text-muted-foreground">
         <a href="mailto:akinsanyajoel82@gmail.com">
