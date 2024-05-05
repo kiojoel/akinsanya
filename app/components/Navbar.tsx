@@ -1,10 +1,13 @@
 "use client";
 
 import { Github, Linkedin, Twitter } from "lucide-react";
-
+import { Poiret_One } from "next/font/google";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ThemeToggle } from "./ThemeToggle";
+import { cn } from "@/lib/utils";
+
+const poit = Poiret_One({ subsets: ["latin"], weight: "400" });
 
 const navItems = [
   {
@@ -29,17 +32,14 @@ export function Navbar() {
   const pathname = usePathname();
   return (
     <nav className="flex align-center justify-between px-8 py-8 ">
-      <div className="">
-        <Link href="/">
-          <h1 className=" text-lg font-extrabold ">Joel</h1>
-          {/* <Image
-            src="./public/download(1).svg"
-            alt="Joel"
-            height="26"
-            width="26"
-            className=" text-lg font-extrabold hover:text-black"
-          /> */}
-        </Link>
+      <div className="mt-[-8px]">
+        <h1
+          className={cn(
+            `${poit.className} font-extrabold text-2xl text-gray-800 dark:text-gray-300`
+          )}
+        >
+          Joel
+        </h1>
       </div>
 
       <div className="hidden sm:flex ">
