@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function Home() {
   return (
     <section className="max-w-7xl w-[70%] pl-7 md:px-10 mx-auto mt-8">

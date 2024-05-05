@@ -18,6 +18,7 @@ const About = () => {
             width={168}
             height={168}
             className=" rounded-full"
+            style={{ width: "auto", height: "auto" }}
           />
           <h3 className="pt-4 pb-2 text-2xl font-semi-bold leading-8 tracking-tight">
             Akinsanya Joel
