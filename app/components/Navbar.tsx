@@ -33,13 +33,15 @@ export function Navbar() {
   return (
     <nav className="flex align-center justify-between px-8 py-8 ">
       <div className="mt-[-8px]">
-        <h1
-          className={cn(
-            `${poit.className} font-extrabold text-2xl text-gray-800 dark:text-gray-300`
-          )}
-        >
-          Joel
-        </h1>
+        <Link href="/">
+          <h1
+            className={cn(
+              `${poit.className} font-extrabold text-2xl text-gray-800 dark:text-gray-300`
+            )}
+          >
+            Joel
+          </h1>
+        </Link>
       </div>
 
       <div className="hidden sm:flex ">

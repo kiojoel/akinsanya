@@ -1,25 +1,32 @@
 export default function Home() {
   return (
-    <section className="max-w-7xl w-[70%] pl-7 md:px-10 mx-auto mt-8">
-      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl mb-4">
-        Akinsanya Joel
+    <section className="max-w-7xl pl-7 md:px-10 mx-auto mt-8">
+      <h1 className="scroll-m-20 text-4xl font-semibold tracking-tight lg:text-5xl mb-4">
+        Empowering Innovation with AI.
       </h1>
 
-      <h4 className="scroll-m-20 text-xl font-semibold tracking-tight mb-6">
-        Hey, I&apos;m Akinsanya Joel, a software developer and ML engineer
-      </h4>
-      <p className="text-xl text-muted-foreground mb-6">
-        I&apos;m passionate about crafting dynamic web and mobile applications.
-        With expertise in React, Node.js, Express, Python, Next.js, and
-        TypeScript, I bring ideas to life with seamless functionality and
-        innovation.
+      <h4 className="scroll-m-20 text-xl font-semibold tracking-tight mb-6"></h4>
+      <p className="text-xl text-muted-foreground mb-4">
+        <a className="text-blue-500 underline font-semibold" href="/about">
+          About Me &#x2197; :
+        </a>
+        Designing intelligent systems and applications to solve real-world
+        problems, continuously advancing in machine learning techniques to push
+        boundaries.
+      </p>
+
+      <p className="text-xl text-muted-foreground mb-4">
+        <a className="text-blue-500 underline font-semibold" href="/articles">
+          Articles &#x2197;:
+        </a>
+        Documenting my learning journey through writing.
       </p>
       <p className="text-xl text-muted-foreground mb-4">
-        When I&apos;m not coding, I&apos;m likely exploring new techniques in
-        machine learning or diving into the latest developments in web
-        technology. Whether it&apos;s optimizing algorithms or building
-        user-friendly interfaces, I thrive on the challenge of pushing
-        boundaries and creating impactful solutions.
+        <a className="text-blue-500 underline font-semibold" href="/projects">
+          Projects &#x2197;:
+        </a>
+        Developing web and mobile applications while also training machine
+        learning models and conducting data analytics.
       </p>
 
       <p className="text-xl text-muted-foreground mb-4">
@@ -29,8 +36,11 @@ export default function Home() {
 
       <h5 className="font-semibold tracking-tight">Contact me</h5>
       <p className="text-sm text-muted-foreground">
-        <a href="mailto:akinsanyajoel82@gmail.com">
+        <a className="block" href="mailto:akinsanyajoel82@gmail.com">
           Email: akinsanyajoel82@gmail.com
+        </a>
+        <a className="underline font-bold" href="/about">
+          Akinsanya Joel
         </a>
       </p>
     </section>
