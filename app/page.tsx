@@ -1,8 +1,6 @@
-import { cn } from "@/lib/utils";
-
 export default function Home() {
   return (
-    <section className="max-w-7xl pl-7 md:px-10 mx-auto mt-8">
+    <div className="max-w-7xl pl-7 md:px-10 mx-auto mt-8">
       <h1
         className=" scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl mb-4`
         "
@@ -44,6 +42,6 @@ export default function Home() {
           Email: akinsanyajoel82@gmail.com
         </a>
       </p>
-    </section>
+    </div>
   );
 }
