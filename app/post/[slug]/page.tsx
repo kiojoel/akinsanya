@@ -1,6 +1,5 @@
 import { Post } from "@/lib/interface";
 import { client, urlFor } from "@/lib/sanity";
-/* import { urlFor } from "@/lib/sanityImageUrl"; */
 import { PortableText } from "next-sanity";
 import Image from "next/image";
 

@@ -1,10 +1,18 @@
+import { cn } from "@/lib/utils";
+import { Sedan } from "next/font/google";
+
+const mont = Sedan({ subsets: ["latin"], weight: "400" });
+
 export default function Home() {
   return (
     <section className="max-w-7xl pl-7 md:px-10 mx-auto mt-8">
-      <h1 className="scroll-m-20 text-4xl font-semibold tracking-tight lg:text-5xl mb-4">
-        Empowering Innovation with AI.
+      <h1
+        className={cn(
+          `${mont.className} scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl mb-4`
+        )}
+      >
+        Enabling Innovation with Machine Learning and App Development.
       </h1>
-
       <h4 className="scroll-m-20 text-xl font-semibold tracking-tight mb-6"></h4>
       <p className="text-xl text-muted-foreground mb-4">
         <a className="text-blue-500 underline font-semibold" href="/about">
@@ -38,9 +46,6 @@ export default function Home() {
       <p className="text-sm text-muted-foreground">
         <a className="block" href="mailto:akinsanyajoel82@gmail.com">
           Email: akinsanyajoel82@gmail.com
-        </a>
-        <a className="underline font-bold" href="/about">
-          Akinsanya Joel
         </a>
       </p>
     </section>
