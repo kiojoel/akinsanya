@@ -31,7 +31,7 @@ const navItems = [
 export function Navbar() {
   const pathname = usePathname();
   return (
-    <nav className="flex align-center justify-between px-8 py-8 ">
+    <nav className="flex align-center justify-between px-8 py-8 sticky top-0 z-50 bg-slate-50 ">
       <div className="mt-[-8px]">
         <Link href="/">
           <h1
