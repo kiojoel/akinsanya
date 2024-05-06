@@ -1,15 +1,11 @@
 import { cn } from "@/lib/utils";
-import { Sedan } from "next/font/google";
-
-const sedan = Sedan({ subsets: ["latin"], weight: "400" });
 
 export default function Home() {
   return (
     <section className="max-w-7xl pl-7 md:px-10 mx-auto mt-8">
       <h1
-        className={cn(
-          `${sedan.className} scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl mb-4`
-        )}
+        className=" scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl mb-4`
+        "
       >
         Enabling Innovation with Machine Learning and App Development.
       </h1>
