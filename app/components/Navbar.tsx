@@ -32,7 +32,7 @@ export function Navbar() {
   const pathname = usePathname();
   return (
     <nav className="flex align-center justify-between px-8 py-8 sticky top-0 z-50 bg-slate-50 dark:bg-black ">
-      <div className="mt-[-8px]">
+      <div0>
         <Link href="/">
           <h1
             className={cn(
@@ -42,7 +42,7 @@ export function Navbar() {
             Joel
           </h1>
         </Link>
-      </div>
+      </div0>
 
       <div className="hidden sm:flex ">
         {navItems.map((item, index) => (
