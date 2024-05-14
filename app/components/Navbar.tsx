@@ -32,11 +32,11 @@ export function Navbar() {
   const pathname = usePathname();
   return (
     <nav className="flex align-center justify-between px-8 py-8 sticky top-0 z-50 bg-slate-50 dark:bg-black ">
-      <div>
+      <div className="mt-[-2]">
         <Link href="/">
           <h1
             className={cn(
-              `${poit.className} font-extrabold text-2xl text-gray-800 dark:text-gray-300`
+              `${poit.className} font-extrabold text-2xl text-gray-800 dark:text-gray-300 `
             )}
           >
             Joel
