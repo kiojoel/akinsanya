@@ -13,12 +13,13 @@ const projects = [
     src: "/joels_pic.jpg",
   },
   {
-    projectName: "Project 2",
-    projectType: "Data Analysis",
+    projectName: "Spam Mail Prediction",
+    projectType: "Machine Learning",
     description:
-      "Nulla facilisi. Phasellus pretium arcu vitae quam lacinia, in tempor sapien dignissim.",
-    techStacks: "Next.js| Node.js| MongoDB",
-    link: "https://example.com/project2",
+      "A logistic regression model to classify emails as spam or not spam, trained on features like word frequencies and TF-IDF scores, involving data preprocessing, feature engineering, model training, and evaluation.",
+    techStacks: "Python|Jupyter",
+    link: "https://github.com/kiojoel/Spam-Mail-Prediction-Logistic-Regression/blob/main/Spam_Mail_Prediction.ipynb",
+    src: "/spam_project.webp",
   },
   {
     projectName: "Project 3",
@@ -62,6 +63,26 @@ const Projects = () => {
       <p className="text-md text-muted-foreground mt-2">
         Projects that I created or working on.
       </p>
+      <p>
+        you can explore various data science and machine learning projects I
+        have worked on. For detailed code and datasets, visit my{" "}
+        <a
+          className="text-blue-500"
+          href="https://www.kaggle.com/akinsanyajoel/code"
+          target="_blank"
+        >
+          Kaggle profile
+        </a>{" "}
+        and{" "}
+        <a
+          className="text-blue-500"
+          href="https://github.com/kiojoel?tab=repositories"
+          target="_blank"
+        >
+          GitHub repository
+        </a>{" "}
+        .
+      </p>
 
       <div className="mt-8">
         <ul className=" md:grid md:grid-cols-3 gap-5 block  ">
@@ -72,7 +93,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <li className="py-4 mt-6 mx-4 h-full w-full shadow-md bg-white dark:bg-gray-950 rounded-xl px-3 text-gray hover:scale-105 transition-transform duration-300">
+              <li className="py-4 mt-6  h-full w-full shadow-md bg-white dark:bg-gray-950 rounded-xl px-3 text-gray hover:scale-105 transition-transform duration-300">
                 <div className="space-y-2">
                   <div className="flex items-center ">
                     <Image
