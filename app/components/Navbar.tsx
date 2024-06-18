@@ -32,19 +32,19 @@ export function Navbar() {
   const pathname = usePathname();
   return (
     <nav className="flex align-center justify-between px-8 py-8 sticky top-0 z-50 bg-slate-50 dark:bg-black ">
-      <div className="mt-[-2]">
+      <div className=" p-0 mt-[-5]">
         <Link href="/">
           <h1
             className={cn(
-              `${poit.className} font-extrabold text-2xl text-gray-800 dark:text-gray-300 `
+              `${poit.className} mt-[-3] font-extrabold text-2xl text-gray-800 dark:text-gray-300 `
             )}
           >
-            Joel
+            Akinsanya
           </h1>
         </Link>
       </div>
 
-      <div className="hidden sm:flex ">
+      <div className="hidden mt-2.5 sm:flex gap-4">
         {navItems.map((item, index) => (
           <Link key={index} href={item.href}>
             <div
@@ -58,7 +58,7 @@ export function Navbar() {
         ))}
       </div>
 
-      <div className=" flex align-center justify-center ">
+      <div className=" mt-2 flex align-center justify-center ">
         <a
           href="https://twitter.com/Akinsanya__Joel"
           target="_blabk"

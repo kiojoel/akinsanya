@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="max-w-7xl pl-7 md:px-10 mx-auto mt-8">
+    <div className="max-w-7xl pl-7 md:px-10 mx-auto mt-8 flex flex-col gap-4">
       <h1
         className=" scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl mb-4`
         "
