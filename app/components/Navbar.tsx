@@ -1,13 +1,9 @@
 "use client";
 
 import { Github, Linkedin, Twitter } from "lucide-react";
-import { Poiret_One } from "next/font/google";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ThemeToggle } from "./ThemeToggle";
-import { cn } from "@/lib/utils";
-
-const poit = Poiret_One({ subsets: ["latin"], weight: "400" });
 
 const navItems = [
   {
@@ -31,20 +27,15 @@ const navItems = [
 export function Navbar() {
   const pathname = usePathname();
   return (
-    <nav className="flex align-center justify-between px-8 py-8 sticky top-0 z-50 bg-slate-50 dark:bg-black ">
-      <div className=" p-0 mt-[-5]">
-        <Link href="/">
-          <h1
-            className={cn(
-              `${poit.className} mt-[-3] font-extrabold text-2xl text-gray-800 dark:text-gray-300 `
-            )}
-          >
-            Akinsanya
-          </h1>
-        </Link>
-      </div>
+    <nav className=" flex align-center items-center justify-between px-8 py-8 sticky top-0 z-50 bg-slate-50 dark:bg-black ">
+      <Link
+        href="/"
+        className=" font-extrabold text-xl text-gray-500 dark:text-gray-300 "
+      >
+        Akinsanya
+      </Link>
 
-      <div className="hidden mt-2.5 sm:flex gap-4">
+      <div className="hidden  sm:flex gap-4">
         {navItems.map((item, index) => (
           <Link key={index} href={item.href}>
             <div
@@ -58,27 +49,27 @@ export function Navbar() {
         ))}
       </div>
 
-      <div className=" mt-2 flex align-center justify-center ">
+      <div className=" flex align-center justify-center items-center ">
         <a
           href="https://twitter.com/Akinsanya__Joel"
           target="_blabk"
           className="mr-3 text-gray-500  hover:text-black  dark:hover:text-white hover:cursor-pointer"
         >
-          <Twitter />
+          <Twitter size={20} />
         </a>
         <a
           href="https://www.linkedin.com/in/akinsanya-joel-1a5b51168/"
           target="_blabk"
           className="mr-3 text-gray-500  hover:text-black  dark:hover:text-white hover:cursor-pointer"
         >
-          <Linkedin />
+          <Linkedin size={20} />
         </a>
         <a
           href="https://github.com/kiojoel"
           target="_blabk"
           className="mr-3 text-gray-500  hover:text-black  dark:hover:text-white hover:cursor-pointer"
         >
-          <Github />
+          <Github size={20} />
         </a>
         {/* <a href="https://medium.com/@akinsanyajoel82" target="_blank">
           <svg
@@ -89,7 +80,7 @@ export function Navbar() {
             <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
           </svg>
         </a> */}
-        <div>
+        <div className="hidden md:flex">
           <ThemeToggle />
         </div>
       </div>

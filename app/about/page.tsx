@@ -30,10 +30,11 @@ const About = () => {
 
         <div className="prose max-w-none prose-lg pt-8 pb-7 dark:prose-invert xl:col-span-2">
           <p className="text-xl text-muted-foreground mb-6">
-            I&apos;m passionate about crafting dynamic web and mobile
-            applications. With expertise in React, Node.js, Express, Python,
-            Next.js, and TypeScript, I bring ideas to life with seamless
-            functionality and innovation.
+            I specialize in building and deploying AI-powered systems, with
+            expertise in advanced machine learning and deep learning. I develop
+            and integrate models into real-world applications, creating
+            scalable, end-to-end solutions that deliver data-driven insights and
+            seamless user experiences.
           </p>
           <p className="text-xl text-muted-foreground mb-4">
             When I&apos;m not coding, I&apos;m likely exploring new techniques
