@@ -3,21 +3,20 @@ import React from "react";
 
 const projects = [
   {
-    projectName: "Mern Blog",
-    projectType: "Web Developement",
+    projectName: "Multiple Disease Prediction System",
+    projectType: "Machine Learning",
     description:
-      "A full-stack blog with user authentication, article creation, commenting, and sharing capabilities",
-    techStacks:
-      "Next.js | React | Node.js | Express.js | MongoDB | TailwindCSS",
-    link: "https://github.com/kiojoel/mern-blog",
-    src: "/joels_pic.jpg",
+      "A web app that predicts various diseases like diabetes and heart disease based on user health data using machine learning models. It helps users take preventive action by providing quick and accurate predictions.",
+    techStacks: "Python | Streamlit",
+    link: "https://multiple-health-disease-prediction-systems.streamlit.app/",
+    src: "/health.png",
   },
   {
     projectName: "Spam Mail Prediction",
     projectType: "Machine Learning",
     description:
       "A logistic regression model to classify emails as spam or not spam, trained on features like word frequencies and TF-IDF scores, involving data preprocessing, feature engineering, model training, and evaluation.",
-    techStacks: "Python|Jupyter",
+    techStacks: "Python | Jupyter",
     link: "https://github.com/kiojoel/Spam-Mail-Prediction-Logistic-Regression/blob/main/Spam_Mail_Prediction.ipynb",
     src: "/spam_project.webp",
   },
@@ -26,7 +25,7 @@ const projects = [
     projectType: "Machine Learning",
     description:
       "Nulla facilisi. Phasellus pretium arcu vitae quam lacinia, in tempor sapien dignissim.",
-    techStacks: "Python| Jupyter",
+    techStacks: "Python | Jupyter",
     link: "https://example.com/project3",
   },
   {
@@ -34,7 +33,7 @@ const projects = [
     projectType: "Web Developement",
     description:
       "Nulla facilisi. Phasellus pretium arcu vitae quam lacinia, in tempor sapien dignissim.",
-    techStacks: "Python| Jupyter",
+    techStacks: "Python | Jupyter",
     link: "https://example.com/project4",
   },
   {
@@ -42,7 +41,7 @@ const projects = [
     projectType: "Web Developement",
     description:
       "Nulla facilisi. Phasellus pretium arcu vitae quam lacinia, in tempor sapien dignissim.",
-    techStacks: "Python| Jupyter",
+    techStacks: "Python | Jupyter",
     link: "https://example.com/project4",
   },
   {
@@ -50,7 +49,7 @@ const projects = [
     projectType: "Web Developement",
     description:
       "Nulla facilisi. Phasellus pretium arcu vitae quam lacinia, in tempor sapien dignissim.",
-    techStacks: "Python| Jupyter",
+    techStacks: "Python | Jupyter",
     link: "https://example.com/project4",
   },
   // Add more projects as needed
