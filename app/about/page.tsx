@@ -24,7 +24,7 @@ const About = () => {
             Akinsanya Joel
           </h3>
           <p className="text-gray-500 dark:text-gray-300 text-center">
-            Software developer and ML engineer
+            ML engineer
           </p>
         </div>
 
