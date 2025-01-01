@@ -27,8 +27,8 @@ export default function Home() {
         <a className="text-blue-500 underline font-semibold" href="/projects">
           Projects &#x2197;:
         </a>
-        Developing web and mobile applications while also training machine
-        learning models and conducting data analytics.
+        Training machine learning models, and performing in-depth data analysis
+        to deliver impactful solutions.
       </p>
 
       <p className="text-xl text-muted-foreground mb-4">
