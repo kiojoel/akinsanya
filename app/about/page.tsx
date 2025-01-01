@@ -14,7 +14,7 @@ const About = () => {
         <div className="flex flex-col items-center">
           <Image
             alt="JOEL"
-            src="/joels_pic.jpg"
+            src="/joels_profile.jpg"
             width={168}
             height={168}
             className=" rounded-full"
