@@ -11,6 +11,9 @@ const mont = Montserrat({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Akinsanya",
   description: "Akinsanya Joel portfolio",
+  icons: {
+    icon: "/logo.svg",
+  },
 };
 
 export default function RootLayout({
