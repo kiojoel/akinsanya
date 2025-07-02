@@ -5,7 +5,7 @@ generator client {
 datasource db {
   // THIS MUST BE "postgresql" FOR DEPLOYMENT
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  url      = env("POSTGRESS_PRISMA_URL")
 }
 
 model Post {
