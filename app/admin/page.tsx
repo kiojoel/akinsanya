@@ -2,6 +2,7 @@ import { getServerSession } from "next-auth";
 import Link from "next/link";
 import { authOptions, isUserAdmin } from "@/lib/auth";
 import WriteForm from "./WriteForm";
+import LoginButton from "../components/LoginButton";
 
 export default async function AdminPage() {
   const isAdmin = await isUserAdmin();
@@ -14,12 +15,15 @@ export default async function AdminPage() {
         <p className="mt-4 text-gray-400">
           You do not have permission to view this page.
         </p>
-        <Link
-          href="/"
-          className="mt-6 inline-block rounded-md bg-sky-500 px-4 py-2 text-white"
-        >
-          Go to Homepage
-        </Link>
+        <div>
+          <Link
+            href="/"
+            className="mt-6 inline-block rounded-md bg-sky-500 px-4 py-2 text-white"
+          >
+            Go to Homepage
+          </Link>
+          <LoginButton />
+        </div>
       </div>
     );
   }
