@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.ProseMirror .katex-display {
+  @apply my-4;
+}
+
+.ProseMirror .katex {
+  @apply inline-block;
+}

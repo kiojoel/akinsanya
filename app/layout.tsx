@@ -6,6 +6,10 @@ import Footer from "./components/Footer";
 import { ThemeProvider } from "./components/theme-provider";
 import { cn } from "@/lib/utils";
 
+import "highlight.js/styles/atom-one-dark.css";
+
+import "katex/dist/katex.min.css";
+
 const mont = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
