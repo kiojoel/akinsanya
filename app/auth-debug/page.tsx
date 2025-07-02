@@ -2,6 +2,7 @@
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
 
+// THE FIX: Add "export default" to the function definition.
 export default async function AuthDebugPage() {
   const session = await getServerSession(authOptions);
 
