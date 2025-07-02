@@ -1,5 +1,5 @@
 // FILE: lib/auth.ts
-import { NextAuthOptions, Profile } from "next-auth";
+import { getServerSession, NextAuthOptions, Profile } from "next-auth";
 import GithubProvider from "next-auth/providers/github";
 import { JWT } from "next-auth/jwt";
 
@@ -26,3 +26,10 @@ export const authOptions: NextAuthOptions = {
   },
   secret: process.env.NEXTAUTH_SECRET,
 };
+
+// This is the new function you are adding to this file.
+// It uses the authOptions defined above.
+export async function isUserAdmin() {
+  const session = await getServerSession(authOptions);
+  return session?.user?.name === process.env.ADMIN_GITHUB_USERNAME;
+}

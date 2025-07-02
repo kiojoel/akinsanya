@@ -1,26 +1,34 @@
 import { getServerSession } from "next-auth";
-import { authOptions } from "@/lib/auth";
-import { redirect } from "next/navigation";
+import Link from "next/link";
+import { authOptions, isUserAdmin } from "@/lib/auth";
 import WriteForm from "./WriteForm";
 
 export default async function AdminPage() {
+  const isAdmin = await isUserAdmin();
   const session = await getServerSession(authOptions);
 
-  // CORRECTED and more robust security check
-  if (
-    !session ||
-    !session.user ||
-    session.user.name !== process.env.ADMIN_GITHUB_USERNAME
-  ) {
-    redirect("/api/auth/signin/github");
+  if (!isAdmin) {
+    return (
+      <div className="text-center py-20">
+        <h1 className="text-4xl font-bold">Not Authorized</h1>
+        <p className="mt-4 text-gray-400">
+          You do not have permission to view this page.
+        </p>
+        <Link
+          href="/"
+          className="mt-6 inline-block rounded-md bg-sky-500 px-4 py-2 text-white"
+        >
+          Go to Homepage
+        </Link>
+      </div>
+    );
   }
 
-  // After the check above, TypeScript knows `session` and `session.user` exist.
   return (
     <main className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold mb-4">Admin Panel</h1>
-      {/* It is still best practice to use optional chaining in JSX */}
-      <p className="text-gray-400 mb-8">Welcome, {session.user?.name}.</p>
+      {/* We can safely assume session exists here because isAdmin is true */}
+      <p className="text-gray-400 mb-8">Welcome, {session?.user?.name}.</p>
       <WriteForm />
     </main>
   );
