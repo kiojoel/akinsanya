@@ -1,4 +1,3 @@
-// FILE: app/admin/edit/[slug]/page.tsx
 import { getServerSession } from "next-auth";
 import { authOptions, isUserAdmin } from "@/lib/auth";
 import { redirect } from "next/navigation";

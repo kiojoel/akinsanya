@@ -101,7 +101,6 @@ export default function EditForm({ post }: { post: Post }) {
         if (!moved && event.dataTransfer) {
           const files = Array.from(event.dataTransfer.files);
           if (files.length > 0) {
-            // THE FIX: Get the first file from the array.
             const file = files[0];
             if (file.type.indexOf("image") === 0) {
               handleImageUpload(file).then((url) => {
@@ -132,7 +131,6 @@ export default function EditForm({ post }: { post: Post }) {
   });
 
   const handleSubmit = async (e: React.FormEvent) => {
-    // ... this function is correct and does not need changes
     e.preventDefault();
     setIsLoading(true);
     try {
@@ -144,8 +142,9 @@ export default function EditForm({ post }: { post: Post }) {
       if (!res.ok) throw new Error("Failed to update post");
       const updatedPost = await res.json();
       alert("Post updated successfully!");
-      router.refresh();
-      router.push(`/post/${updatedPost.slug}`);
+      /* router.refresh();
+      router.push(`/post/${updatedPost.slug}`); */
+      window.location.href = `/post/${updatedPost.slug}`;
     } catch (error: any) {
       alert(`Error: ${error.message}`);
     } finally {
