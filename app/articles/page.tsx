@@ -4,6 +4,8 @@ import { authOptions } from "@/lib/auth";
 import { getPosts } from "@/lib/data";
 import DeleteButton from "../components/DeleteButton";
 
+export const dynamic = 'force-dynamic';
+
 export default async function Article() {
   // Call the database directly! No more fetch.
   const data = await getPosts();

@@ -142,9 +142,9 @@ export default function EditForm({ post }: { post: Post }) {
       if (!res.ok) throw new Error("Failed to update post");
       const updatedPost = await res.json();
       alert("Post updated successfully!");
-      /* router.refresh();
-      router.push(`/post/${updatedPost.slug}`); */
-      window.location.href = `/post/${updatedPost.slug}`;
+      router.refresh();
+      router.push(`/post/${updatedPost.slug}`);
+     /*  window.location.href = `/post/${updatedPost.slug}`; */
     } catch (error: any) {
       alert(`Error: ${error.message}`);
     } finally {
