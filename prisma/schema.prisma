@@ -1,22 +1,20 @@
-// prisma/schema.prisma
-
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
-  // We start with sqlite for easy local development
-  provider = "sqlite"
+  // THIS MUST BE "postgresql" FOR DEPLOYMENT
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
 model Post {
-  id        String   @id @default(cuid()) // Unique ID, replaces Sanity's _id
-  slug      String   @unique // URL-friendly identifier
+  id        String   @id @default(cuid())
+  slug      String   @unique
   title     String
-  overview  String
-  content   Json     // Stores the rich text content from the Novel editor
+  overview  String   @db.Text
+  content   Json
   published Boolean  @default(true)
-  createdAt DateTime @default(now()) // Replaces Sanity's _createdAt
+  createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
