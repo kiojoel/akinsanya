@@ -2,6 +2,8 @@ import ContentRenderer from "@/app/components/ContentRenderer";
 import { notFound } from "next/navigation";
 import { getPostBySlug, getPosts } from "@/lib/data";
 
+export const dynamic = "force-dynamic";
+
 export async function generateStaticParams() {
   const posts = await getPosts();
   if (!Array.isArray(posts)) {
