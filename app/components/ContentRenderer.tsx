@@ -2,14 +2,11 @@
 
 import { useEditor, EditorContent } from "@tiptap/react";
 import type { JSONContent } from "@tiptap/core";
-
-// Tiptap Extensions
 import StarterKit from "@tiptap/starter-kit";
 import Image from "@tiptap/extension-image";
 import Mathematics from "@tiptap/extension-mathematics";
 import CodeBlockLowlight from "@tiptap/extension-code-block-lowlight";
-
-// Syntax Highlighting Setup
+import Link from "@tiptap/extension-link";
 import { createLowlight } from "lowlight";
 import ts from "highlight.js/lib/languages/typescript";
 import js from "highlight.js/lib/languages/javascript";
@@ -35,6 +32,11 @@ const ContentRenderer = ({ content }: { content: JSONContent }) => {
         HTMLAttributes: { class: "rounded-lg border border-stone-200" },
       }),
       CodeBlockLowlight.configure({ lowlight }),
+      Link.configure({
+        openOnClick: true,
+        autolink: true,
+        defaultProtocol: "https",
+      }),
     ],
     editorProps: {
       attributes: {

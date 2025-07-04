@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-  "dev": "next dev",
-  "build": "prisma migrate deploy && next build",
-  "start": "next start",
-  "lint": "next lint",
-  "postinstall": "prisma generate"
-},
+    "dev": "next dev",
+    "build": "prisma migrate deploy && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "prisma generate"
+  },
   "dependencies": {
     "@portabletext/react": "^3.0.18",
     "@prisma/client": "^6.11.0",
@@ -19,6 +19,7 @@
     "@tiptap/core": "^2.23.1",
     "@tiptap/extension-code-block-lowlight": "^2.23.1",
     "@tiptap/extension-image": "^2.23.1",
+    "@tiptap/extension-link": "^2.24.2",
     "@tiptap/extension-mathematics": "^2.23.1",
     "@tiptap/pm": "^2.23.1",
     "@tiptap/react": "^2.23.1",

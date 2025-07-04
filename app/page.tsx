@@ -1,8 +1,8 @@
 export default function Home() {
   return (
     <div className="max-w-5xl mx-auto px-6 md:px-10 mt-12 flex flex-col gap-6">
-      <h1 className="text-4xl md:text-5xl font-bold leading-tight tracking-tight text-gray-900">
-        Enabling Innovation with Machine Learning & Intelligent App Development.
+      <h1 className="text-4xl md:text-5xl font-bold leading-tight tracking-tight">
+        Enabling Innovation with Machine Learning.
       </h1>
 
       <p className="text-lg md:text-xl text-muted-foreground">

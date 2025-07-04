@@ -1,41 +1,44 @@
-import { prisma } from "./prisma";
-import type { JSONContent } from "@tiptap/core";
+// FILE: lib/data.ts
 
-export interface Post {
+// Define the interface for a Post to be used in our functions
+interface Post {
   id: string;
-  slug: string;
   title: string;
+  slug: string;
   overview: string;
-
-  content: JSONContent | null;
-  published: boolean;
-  createdAt: Date;
-  updatedAt: Date;
+  content: any;
+  createdAt: string;
 }
 
+const getBaseUrl = () => {
+  if (process.env.VERCEL_URL) return `https://akinsanya.vercel.app`;
+  return `http://localhost:3000`;
+};
+
 export async function getPosts(): Promise<Post[]> {
-  try {
-    const posts = await prisma.post.findMany({
-      where: { published: true },
-      orderBy: { createdAt: "desc" },
-    });
-    // Cast the result to our more specific Post[] type
-    return posts as Post[];
-  } catch (error) {
-    console.error("Database Error:", error);
-    throw new Error("Failed to fetch posts.");
+  const url = `${getBaseUrl()}/api/posts`;
+
+  const res = await fetch(url, { cache: "no-store" });
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch posts");
   }
+
+  return res.json();
 }
 
 export async function getPostBySlug(slug: string): Promise<Post | null> {
-  try {
-    const post = await prisma.post.findUnique({
-      where: { slug: slug },
-    });
-    // Cast the result to our more specific Post type
-    return post as Post | null;
-  } catch (error) {
-    console.error("Database Error:", error);
-    throw new Error("Failed to fetch post.");
+  const url = `${getBaseUrl()}/api/posts/${slug}`;
+
+  const res = await fetch(url, { cache: "no-store" });
+
+  if (res.status === 404) {
+    return null;
   }
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch post");
+  }
+
+  return res.json();
 }

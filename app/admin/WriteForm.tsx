@@ -4,14 +4,12 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useEditor, EditorContent } from "@tiptap/react";
 import type { JSONContent } from "@tiptap/core";
-
 import TiptapToolbar from "@/app/components/TiptapToolbar";
-
-// ... Tiptap Extensions and Syntax Highlighting Setup ...
 import StarterKit from "@tiptap/starter-kit";
 import Image from "@tiptap/extension-image";
 import Mathematics from "@tiptap/extension-mathematics";
 import CodeBlockLowlight from "@tiptap/extension-code-block-lowlight";
+import Link from "@tiptap/extension-link";
 import { createLowlight } from "lowlight";
 import ts from "highlight.js/lib/languages/typescript";
 import js from "highlight.js/lib/languages/javascript";
@@ -34,7 +32,6 @@ export default function WriteForm() {
   const [isLoading, setIsLoading] = useState(false);
 
   const handleImageUpload = async (file: File) => {
-    // ... this function is correct and does not need changes
     if (!file) return null;
     try {
       const response = await fetch(`/api/upload?filename=${file.name}`, {
@@ -61,58 +58,12 @@ export default function WriteForm() {
         HTMLAttributes: { class: "rounded-lg border border-stone-200" },
       }),
       CodeBlockLowlight.configure({ lowlight }),
+      Link.configure({ openOnClick: false, autolink: true }),
     ],
     editorProps: {
       attributes: {
         class:
           "prose dark:prose-invert prose-sm sm:prose-base lg:prose-lg xl:prose-2xl m-5 focus:outline-none",
-      },
-      handlePaste: (view, event) => {
-        const items = Array.from(event.clipboardData?.items || []);
-        for (const item of items) {
-          if (item.type.indexOf("image") === 0) {
-            const file = item.getAsFile();
-            if (file) {
-              handleImageUpload(file).then((url) => {
-                if (url)
-                  view.dispatch(
-                    view.state.tr.replaceSelectionWith(
-                      view.state.schema.nodes.image.create({ src: url })
-                    )
-                  );
-              });
-            }
-            return true;
-          }
-        }
-        return false;
-      },
-      handleDrop: (view, event, slice, moved) => {
-        if (!moved && event.dataTransfer) {
-          const files = Array.from(event.dataTransfer.files);
-          if (files.length > 0) {
-            const file = files[0];
-            if (file.type.indexOf("image") === 0) {
-              handleImageUpload(file).then((url) => {
-                if (url) {
-                  const coordinates = view.posAtCoords({
-                    left: event.clientX,
-                    top: event.clientY,
-                  });
-                  if (coordinates)
-                    view.dispatch(
-                      view.state.tr.insert(
-                        coordinates.pos,
-                        view.state.schema.nodes.image.create({ src: url })
-                      )
-                    );
-                }
-              });
-              return true;
-            }
-          }
-        }
-        return false;
       },
     },
     onUpdate: ({ editor }) => {
@@ -151,6 +102,7 @@ export default function WriteForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
+      {/* Title and Overview fields */}
       <div>
         <label
           htmlFor="title"
