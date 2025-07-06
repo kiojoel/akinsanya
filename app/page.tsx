@@ -12,11 +12,9 @@ export default function Home() {
         >
           About Me ↗
         </a>
-        &nbsp;— I’m a machine learning engineer and aspiring quant researcher
-        focused on building intelligent systems that solve real-world problems.
-        I work across ML, data science, and backend development—pushing
-        boundaries through hands-on projects, research, and open-source
-        contributions.
+        &nbsp;— Machine learning engineer focused on building intelligent
+        systems that solve real-world problems. I work across ML & data science
+        through hands-on projects, research, and open-source.
       </p>
 
       <p className="text-lg md:text-xl text-muted-foreground">
