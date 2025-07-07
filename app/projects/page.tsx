@@ -12,6 +12,15 @@ const projects = [
     src: "/health.png",
   },
   {
+    projectName: "Gradient Descent Variants",
+    projectType: "Machine Learning",
+    description:
+      "An educational toolkit designed for understanding gradient descent optimization.",
+    techStacks: "Python",
+    link: "https://github.com/kiojoel/gradient-descent-variants",
+    src: "/gradient.png",
+  },
+  {
     projectName: "Spam Mail Prediction",
     projectType: "Machine Learning",
     description:
@@ -19,14 +28,6 @@ const projects = [
     techStacks: "Python | Jupyter",
     link: "https://github.com/kiojoel/Spam-Mail-Prediction-Logistic-Regression/blob/main/Spam_Mail_Prediction.ipynb",
     src: "/spam_project.webp",
-  },
-  {
-    projectName: "Project 3",
-    projectType: "Machine Learning",
-    description:
-      "Nulla facilisi. Phasellus pretium arcu vitae quam lacinia, in tempor sapien dignissim.",
-    techStacks: "Python | Jupyter",
-    link: "https://example.com/project3",
   },
   {
     projectName: "Project 4",
