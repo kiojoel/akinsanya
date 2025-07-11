@@ -5,7 +5,7 @@ import { Navbar } from "./components/Navbar";
 import Footer from "./components/Footer";
 import { ThemeProvider } from "./components/theme-provider";
 import { cn } from "@/lib/utils";
-
+import { Analytics } from "@vercel/analytics/next";
 import "highlight.js/styles/atom-one-dark.css";
 
 import "katex/dist/katex.min.css";
@@ -37,6 +37,7 @@ export default function RootLayout({
           <Navbar />
           <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 min-h-screen ">
             {children}
+            <Analytics />
           </main>
           <Footer />
         </ThemeProvider>
