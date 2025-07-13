@@ -48,7 +48,7 @@ export default function Home() {
       </p>
 
       <div className="mt-6">
-        <h5 className="text-lg font-semibold text-gray-800 mb-1">Contact Me</h5>
+        <h5 className="text-lg font-semibold mb-1">Contact Me</h5>
         <a
           className="text-sm text-muted-foreground hover:text-blue-700 block"
           href="mailto:akinsanyajoel82@gmail.com"
