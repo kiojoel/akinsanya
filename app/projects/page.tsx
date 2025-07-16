@@ -17,17 +17,16 @@ const projects = [
     description:
       "An educational toolkit designed for understanding gradient descent optimization.",
     techStacks: "Python",
-    link: "https://github.com/kiojoel/gradient-descent-variants",
+    link: "https://gradient-descent-variants.streamlit.app/",
     src: "/gradient.png",
   },
   {
-    projectName: "Spam Mail Prediction",
-    projectType: "Machine Learning",
+    projectName: "Project 3",
+    projectType: "Web Developement",
     description:
-      "A logistic regression model to classify emails as spam or not spam, trained on features like word frequencies and TF-IDF scores, involving data preprocessing, feature engineering, model training, and evaluation.",
+      "Nulla facilisi. Phasellus pretium arcu vitae quam lacinia, in tempor sapien dignissim.",
     techStacks: "Python | Jupyter",
-    link: "https://github.com/kiojoel/Spam-Mail-Prediction-Logistic-Regression/blob/main/Spam_Mail_Prediction.ipynb",
-    src: "/spam_project.webp",
+    link: "https://example.com/project4",
   },
   {
     projectName: "Project 4",
