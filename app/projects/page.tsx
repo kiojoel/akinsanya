@@ -21,12 +21,14 @@ const projects = [
     src: "/gradient.png",
   },
   {
-    projectName: "Project 3",
-    projectType: "Web Developement",
+    projectName: "Custom Cross-Validation Library (custom-cv)",
+    projectType: "Python Package | Machine Learning",
     description:
-      "Nulla facilisi. Phasellus pretium arcu vitae quam lacinia, in tempor sapien dignissim.",
-    techStacks: "Python | Jupyter",
-    link: "https://example.com/project4",
+      "Developed and published a Python library to PyPI providing specialized cross-validation strategies (Stratified, Time-Series, Spatial) for robust model evaluation.",
+    techStacks:
+      "Python | PyPI | scikit-learn | pytest | Matplotlib | Seaborn | Pandas",
+    link: "https://github.com/kiojoel/custom-cv-lib",
+    src: "/cv.png",
   },
   {
     projectName: "Project 4",
