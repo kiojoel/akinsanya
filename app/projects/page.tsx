@@ -30,30 +30,6 @@ const projects = [
     link: "https://github.com/kiojoel/custom-cv-lib",
     src: "/cv.png",
   },
-  {
-    projectName: "Project 4",
-    projectType: "Web Developement",
-    description:
-      "Nulla facilisi. Phasellus pretium arcu vitae quam lacinia, in tempor sapien dignissim.",
-    techStacks: "Python | Jupyter",
-    link: "https://example.com/project4",
-  },
-  {
-    projectName: "Project 5",
-    projectType: "Web Developement",
-    description:
-      "Nulla facilisi. Phasellus pretium arcu vitae quam lacinia, in tempor sapien dignissim.",
-    techStacks: "Python | Jupyter",
-    link: "https://example.com/project4",
-  },
-  {
-    projectName: "Project 6",
-    projectType: "Web Developement",
-    description:
-      "Nulla facilisi. Phasellus pretium arcu vitae quam lacinia, in tempor sapien dignissim.",
-    techStacks: "Python | Jupyter",
-    link: "https://example.com/project4",
-  },
   // Add more projects as needed
 ];
 

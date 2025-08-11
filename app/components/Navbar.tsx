@@ -3,17 +3,16 @@
 import { Github, Linkedin, Twitter } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
-  {
+  /* {
     name: "Home",
     href: "/",
-  },
-  {
+  }, */
+  /* {
     name: "About",
     href: "/about",
-  },
+  }, */
   {
     name: "Projects",
     href: "/projects",
@@ -85,7 +84,6 @@ export function Navbar() {
           </svg>
         </a> */}
         <div className="hidden md:flex">
-          <ThemeToggle />
         </div>
       </div>
     </nav>

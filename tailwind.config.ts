@@ -19,6 +19,7 @@ const config = {
     },
     extend: {
       colors: {
+        sandpink: "#D4A896",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
