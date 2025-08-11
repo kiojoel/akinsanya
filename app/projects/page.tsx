@@ -35,7 +35,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="max-w-7xl w-full">
+    <section className="max-w-7xl w-full mb-5">
       <h1 className="text-4xl font-semibold lg:text-5xl pt-5">Projects</h1>
       <p className="text-md text-muted-foreground mt-2">
         Projects that I created or working on.
