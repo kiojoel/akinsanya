@@ -8,8 +8,8 @@ export default function Home() {
       </h1>{" "}
       <p className="text-lg md:text-xl text-muted-foreground">
         I&apos;m a machine learning engineer passionate about creating
-        intelligent systems that tackle real-world challenges. I dive into ML
-        and data science through practical projects and research.
+        intelligent systems that tackle real-world challenges through practical
+        projects and research.
       </p>
       <p className="text-lg md:text-xl text-muted-foreground">
         I enjoy sharing my experiences and insights on machine learning, data
