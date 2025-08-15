@@ -3,13 +3,13 @@ import React from "react";
 
 const projects = [
   {
-    projectName: "Multiple Disease Prediction System",
-    projectType: "Machine Learning",
+    projectName: "Black-Scholes Option Pricer",
+    projectType: "FinTech Application",
     description:
-      "A web app that predicts various diseases like diabetes and heart disease based on user health data using machine learning models. It helps users take preventive action by providing quick and accurate predictions.",
-    techStacks: "Python | Streamlit",
-    link: "https://multiple-health-disease-prediction-systems.streamlit.app/",
-    src: "/health.png",
+      "An interactive web app for pricing European options and their Greeks using the Black-Scholes model with live market data from Yahoo Finance.",
+    techStacks: "Python, Streamlit, Pandas, yfinance",
+    link: "https://black-scholes-pricing-models.streamlit.app/",
+    src: "/black-scholes-app.jpg",
   },
   {
     projectName: "Gradient Descent Variants",
@@ -29,6 +29,15 @@ const projects = [
       "Python | PyPI | scikit-learn | pytest | Matplotlib | Seaborn | Pandas",
     link: "https://github.com/kiojoel/custom-cv-lib",
     src: "/cv.png",
+  },
+  {
+    projectName: "Multiple Disease Prediction System",
+    projectType: "Machine Learning",
+    description:
+      "A web app that predicts various diseases like diabetes and heart disease based on user health data using machine learning models. It helps users take preventive action by providing quick and accurate predictions.",
+    techStacks: "Python | Streamlit",
+    link: "https://multiple-health-disease-prediction-systems.streamlit.app/",
+    src: "/health.png",
   },
   // Add more projects as needed
 ];
