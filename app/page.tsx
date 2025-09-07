@@ -2,16 +2,16 @@ export default function Home() {
   return (
     <div className="max-w-5xl mx-auto px-6 md:px-10 mt-10 mb-10 flex flex-col gap-6">
       <h1 className="text-4xl md:text-5xl font-bold leading-tight tracking-tight">
-        Enabling Innovation with Machine Learning.
+        Building Intelligent Solutions for Finance & Beyond.
       </h1>{" "}
       <p className="text-lg md:text-xl text-muted-foreground">
-        I&apos;m a machine learning engineer passionate about creating
-        intelligent systems that tackle real-world challenges through practical
-        projects and research.
+        I&apos;m a machine learning engineer with a passion for quantitative
+        finance, creating intelligent systems that solve complex financial
+        problems through data-driven insights and practical applications.
       </p>
       <p className="text-lg md:text-xl text-muted-foreground">
-        I enjoy sharing my experiences and insights on machine learning, data
-        science, and my current research through my
+        I share my journey exploring the intersection of ML and finance through
+        my
         <a
           href="/articles"
           className="text-blue-600 hover:text-blue-800 font-medium underline"
@@ -19,8 +19,9 @@ export default function Home() {
           {" "}
           articles{" "}
         </a>
-        . I strive to make complex concepts accessible and to chronicle my
-        personal growth along the way.
+        . From algorithmic trading strategies to risk modeling, I break down
+        complex quantitative concepts and document my learning path in both
+        machine learning and financial markets.
       </p>
       <p className="text-lg md:text-xl text-muted-foreground">
         My
@@ -31,14 +32,15 @@ export default function Home() {
           {" "}
           projects{" "}
         </a>
-        range from developing ML models and complete AI systems to conducting
-        thorough data analyses, always aiming to deliver impactful, scalable
-        solutions that bridge innovative ideas with real-world applications.
+        span from ML-powered trading systems and portfolio optimization tools to
+        comprehensive financial analytics platforms, always focusing on creating
+        scalable solutions that transform financial data into actionable
+        intelligence.
       </p>
       <p className="text-lg md:text-xl text-muted-foreground">
-        Let&apos;s join forces to turn inspiring ideas into reality, whether
-        through a project, competition, or research endeavor. I&apos;m eager to
-        collaborate on something thrilling together!
+        Let&apos;s connect to turn inspiring ideas into reality, whether through
+        a project, competition, or research. I&apos;m eager to collaborate on
+        something thrilling together!
       </p>
       <div className="mt-6">
         <h5 className="text-lg font-semibold mb-1">Contact Me</h5>
