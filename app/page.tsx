@@ -2,16 +2,14 @@ export default function Home() {
   return (
     <div className="max-w-5xl mx-auto px-6 md:px-10 mt-10 mb-10 flex flex-col gap-6">
       <h1 className="text-4xl md:text-5xl font-bold leading-tight tracking-tight">
-        Building Intelligent Solutions for Finance & Beyond.
-      </h1>{" "}
+        Building ML Systems for the Real World.
+      </h1>
       <p className="text-lg md:text-xl text-muted-foreground">
-        I&apos;m a machine learning engineer with a passion for quantitative
-        finance, creating intelligent systems that solve complex financial
-        problems through data-driven insights and practical applications.
+        I&apos;m a machine learning engineer with a focus on building production
+        ML systems and the backend infrastructure that supports them.
       </p>
       <p className="text-lg md:text-xl text-muted-foreground">
-        I share my journey exploring the intersection of ML and finance through
-        my
+        I share what I&apos;m learning and building through my
         <a
           href="/articles"
           className="text-blue-600 hover:text-blue-800 font-medium underline"
@@ -19,9 +17,9 @@ export default function Home() {
           {" "}
           articles{" "}
         </a>
-        . From algorithmic trading strategies to risk modeling, I break down
-        complex quantitative concepts and document my learning path in both
-        machine learning and financial markets.
+        . From model training and deployment to distributed systems and
+        backend engineering, I document the concepts and decisions that
+        actually matter in production.
       </p>
       <p className="text-lg md:text-xl text-muted-foreground">
         My
@@ -32,15 +30,24 @@ export default function Home() {
           {" "}
           projects{" "}
         </a>
-        span from ML-powered trading systems and portfolio optimization tools to
-        comprehensive financial analytics platforms, always focusing on creating
-        scalable solutions that transform financial data into actionable
-        intelligence.
+        range from data pipelines and ML-powered APIs to geospatial systems
+        and open-source tooling, always focused on building things that work
+        reliably at scale.
       </p>
+      {/* <p className="text-lg md:text-xl text-muted-foreground">
+        The{" "}
+        <a
+          href="/research"
+          className="text-blue-600 hover:text-blue-800 font-medium underline"
+        >
+          research
+        </a>{" "}
+        page tracks the math, ML theory, and systems topics I&apos;m actively
+        working through.
+      </p> */}
       <p className="text-lg md:text-xl text-muted-foreground">
-        Let&apos;s connect to turn inspiring ideas into reality, whether through
-        a project, competition, or research. I&apos;m eager to collaborate on
-        something thrilling together!
+        If you&apos;re working on something interesting in ML or backend
+        systems, I&apos;d like to hear about it.
       </p>
       <div className="mt-6">
         <h5 className="text-lg font-semibold mb-1">Contact Me</h5>
