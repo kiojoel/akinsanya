@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Akinsanya",
   description: "Akinsanya Joel portfolio",
   icons: {
-    icon: "/logo.svg",
+    icon: "/akin.png",
   },
 };
 

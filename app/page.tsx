@@ -1,90 +1,91 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
-    <div className="max-w-5xl mx-auto px-6 md:px-10 mt-10 mb-10 flex flex-col gap-6">
-      <h1 className="text-4xl md:text-5xl font-bold leading-tight tracking-tight">
-        Building ML Systems for the Real World.
-      </h1>
-      <p className="text-lg md:text-xl text-muted-foreground">
-        I&apos;m a machine learning engineer with a focus on building production
-        ML systems and the backend infrastructure that supports them.
-      </p>
-      <p className="text-lg md:text-xl text-muted-foreground">
-        I share what I&apos;m learning and building through my
+    <div className="max-w-2xl mx-auto px-6 py-12 flex flex-col gap-10">
+
+      {/* Hero Image — full width rectangle */}
+      <div className="w-full aspect-[3/2] rounded-xl overflow-hidden border border-slate-300 shadow-sm">
+        <Image
+          src="/akin.png"
+          alt="Akinsanya Joel"
+          width={800}
+          height={533}
+          className="object-cover object-top w-full h-full"
+          priority
+        />
+      </div>
+
+      {/* Name + Role + Tagline */}
+      <div className="flex flex-col gap-2 pb-8 border-b border-slate-300">
+        <p className="text-sm tracking-widest font-bold uppercase text-slate-500">
+          ML / MLOps Engineer
+        </p>
+        <h1 className="text-2xl md:text-3xl font-bold leading-snug tracking-tight">
+          Akinsanya Joel
+        </h1>
+        <p className="text-sm md:text-base text-slate-600 leading-relaxed mt-1">
+          Building ML systems and the backend infrastructure that supports them.
+        </p>
+      </div>
+
+      {/* Navigation Links */}
+      <div className="flex gap-8 pb-8 border-b border-slate-300">
         <a
           href="/articles"
-          className="text-blue-600 hover:text-blue-800 font-medium underline"
+          className="text-slate-800 font-semibold text-sm tracking-wide hover:text-slate-500 underline underline-offset-4 decoration-slate-400"
         >
-          {" "}
-          articles{" "}
+          Articles
         </a>
-        . From model training and deployment to distributed systems and
-        backend engineering, I document the concepts and decisions that
-        actually matter in production.
-      </p>
-      <p className="text-lg md:text-xl text-muted-foreground">
-        My
         <a
           href="/projects"
-          className="text-blue-600 hover:text-blue-800 font-medium underline"
+          className="text-slate-800 font-semibold text-sm tracking-wide hover:text-slate-500 underline underline-offset-4 decoration-slate-400"
         >
-          {" "}
-          projects{" "}
+          Projects
         </a>
-        range from data pipelines and ML-powered APIs to geospatial systems
-        and open-source tooling, always focused on building things that work
-        reliably at scale.
-      </p>
-      {/* <p className="text-lg md:text-xl text-muted-foreground">
-        The{" "}
-        <a
-          href="/research"
-          className="text-blue-600 hover:text-blue-800 font-medium underline"
-        >
-          research
-        </a>{" "}
-        page tracks the math, ML theory, and systems topics I&apos;m actively
-        working through.
-      </p> */}
-      <p className="text-lg md:text-xl text-muted-foreground">
+      </div>
+
+      <p className="text-sm md:text-base text-slate-600 leading-relaxed -mb-4">
         If you&apos;re working on something interesting in ML or backend
         systems, I&apos;d like to hear about it.
       </p>
-      <div className="mt-6">
-        <h5 className="text-lg font-semibold mb-1">Contact Me</h5>
-        <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6">
+
+      {/* Contact */}
+      <div className="flex flex-col gap-3 pt-4 border-t border-slate-300">
+        <span className="text-xs tracking-widest uppercase text-slate-500 font-medium">
+          Contact
+        </span>
+        <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
           <a
-            className="text-sm text-muted-foreground hover:text-blue-700"
             href="mailto:akinsanyajoel82@gmail.com"
+            className="text-slate-800 font-medium hover:text-slate-500 underline underline-offset-4 decoration-slate-400"
           >
-            Email: akinsanyajoel82@gmail.com
+            Email
           </a>
-          <div className="flex flex-wrap items-center gap-3 text-sm">
-            <a
-              href="https://twitter.com/Akinsanya__Joel"
-              target="_blank"
-              className="text-gray-500 hover:text-blue-700 hover:underline"
-            >
-              Twitter
-            </a>
-            <span className="text-gray-500">|</span>
-            <a
-              href="https://www.linkedin.com/in/akinsanya-joel-1a5b51168/"
-              target="_blank"
-              className="text-gray-500 hover:text-blue-700 hover:underline"
-            >
-              LinkedIn
-            </a>
-            <span className="text-gray-500">|</span>
-            <a
-              href="https://github.com/kiojoel"
-              target="_blank"
-              className="text-gray-500 hover:text-blue-700 hover:underline"
-            >
-              GitHub
-            </a>
-          </div>
+          <a
+            href="https://twitter.com/Akinsanya__Joel"
+            target="_blank"
+            className="text-slate-800 font-medium hover:text-slate-500 underline underline-offset-4 decoration-slate-400"
+          >
+            Twitter
+          </a>
+          <a
+            href="https://www.linkedin.com/in/akinsanya-joel-1a5b51168/"
+            target="_blank"
+            className="text-slate-800 font-medium hover:text-slate-500 underline underline-offset-4 decoration-slate-400"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/kiojoel"
+            target="_blank"
+            className="text-slate-800 font-medium hover:text-slate-500 underline underline-offset-4 decoration-slate-400"
+          >
+            GitHub
+          </a>
         </div>
       </div>
+
     </div>
   );
 }
