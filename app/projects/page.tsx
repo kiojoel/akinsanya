@@ -65,7 +65,7 @@ const Projects = () => {
           href="https://github.com/kiojoel?tab=repositories"
           target="_blank"
         >
-          GitHub repository
+          GitHub
         </a>{" "}
         .
       </p>

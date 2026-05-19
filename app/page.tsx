@@ -4,7 +4,6 @@ export default function Home() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-12 flex flex-col gap-10">
 
-      {/* Hero Image — full width rectangle */}
       <div className="w-full aspect-[3/2] rounded-xl overflow-hidden border border-slate-300 shadow-sm">
         <Image
           src="/akin.png"
@@ -18,13 +17,13 @@ export default function Home() {
 
       {/* Name + Role + Tagline */}
       <div className="flex flex-col gap-2 pb-8 border-b border-slate-300">
-        <p className="text-sm tracking-widest font-bold uppercase text-slate-500">
-          ML / MLOps Engineer
+        <p className="text-lg tracking-widest font-bold uppercase text-slate-500">
+          Machine Learning / MLOps Engineer
         </p>
-        <h1 className="text-2xl md:text-3xl font-bold leading-snug tracking-tight">
+        <h1 className="text-2xl md:text-4xl font-bold leading-snug tracking-tight">
           Akinsanya Joel
         </h1>
-        <p className="text-sm md:text-base text-slate-600 leading-relaxed mt-1">
+        <p className="text-lg md:text-base text-slate-600 leading-relaxed mt-1">
           Building ML systems and the backend infrastructure that supports them.
         </p>
       </div>
@@ -33,26 +32,26 @@ export default function Home() {
       <div className="flex gap-8 pb-8 border-b border-slate-300">
         <a
           href="/articles"
-          className="text-slate-800 font-semibold text-sm tracking-wide hover:text-slate-500 underline underline-offset-4 decoration-slate-400"
+          className="text-slate-800 font-semibold text-lg tracking-wide hover:text-slate-500 underline underline-offset-4 decoration-slate-400"
         >
           Articles
         </a>
         <a
           href="/projects"
-          className="text-slate-800 font-semibold text-sm tracking-wide hover:text-slate-500 underline underline-offset-4 decoration-slate-400"
+          className="text-slate-800 font-semibold text-lg tracking-wide hover:text-slate-500 underline underline-offset-4 decoration-slate-400"
         >
           Projects
         </a>
       </div>
 
-      <p className="text-sm md:text-base text-slate-600 leading-relaxed -mb-4">
+      <p className="text-lg md:text-base text-slate-600 leading-relaxed -mb-4">
         If you&apos;re working on something interesting in ML or backend
         systems, I&apos;d like to hear about it.
       </p>
 
       {/* Contact */}
       <div className="flex flex-col gap-3 pt-4 border-t border-slate-300">
-        <span className="text-xs tracking-widest uppercase text-slate-500 font-medium">
+        <span className="text-sm tracking-widest uppercase text-slate-500 font-medium">
           Contact
         </span>
         <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
