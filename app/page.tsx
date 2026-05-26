@@ -17,7 +17,7 @@ export default function Home() {
 
       {/* Name + Role + Tagline */}
       <div className="flex flex-col gap-2 pb-8 border-b border-slate-300">
-        <p className="text-lg tracking-widest font-bold uppercase text-slate-500">
+        <p className="text-sm tracking-widest font-bold uppercase text-slate-500">
           Machine Learning / MLOps Engineer
         </p>
         <h1 className="text-2xl md:text-4xl font-bold leading-snug tracking-tight">
