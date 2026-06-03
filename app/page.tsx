@@ -71,7 +71,7 @@ export default function Home() {
       {/* Short Note */}
       <section>
         <p className="text-slate-700 leading-relaxed">
-          If you're working on something interesting in ML or backend systems, I'd like to hear about it.
+          If you&apos;re working on something interesting in ML or backend systems, I&#39;d like to hear about it.
         </p>
       </section>
 
