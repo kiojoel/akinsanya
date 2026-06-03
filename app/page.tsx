@@ -2,89 +2,146 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="max-w-2xl mx-auto px-6 py-12 flex flex-col gap-10">
+    <main className="max-w-2xl mx-auto px-6 py-10 flex flex-col gap-7">
 
-      <div className="w-full aspect-[3/2] rounded-xl overflow-hidden border border-slate-300 shadow-sm">
+      {/* Portrait */}
+      <div className="w-full aspect-[3/2] overflow-hidden rounded-xl border border-slate-300">
         <Image
           src="/akin.png"
           alt="Akinsanya Joel"
           width={800}
           height={533}
-          className="object-cover object-top w-full h-full"
           priority
+          className="object-cover object-top w-full h-full"
         />
       </div>
 
-      {/* Name + Role + Tagline */}
-      <div className="flex flex-col gap-2 pb-8 border-b border-slate-300">
-        <p className="text-sm tracking-widest font-bold uppercase text-slate-500">
-          Machine Learning / MLOps Engineer
-        </p>
-        <h1 className="text-2xl md:text-4xl font-bold leading-snug tracking-tight">
+      {/* Intro */}
+      <section className="pb-8 border-b border-slate-300">
+        <h1 className="text-4xl md:text-5xl pb-2 font-bold tracking-tight text-slate-900">
           Akinsanya Joel
         </h1>
-        <p className="text-lg md:text-base text-slate-600 leading-relaxed mt-1">
-          Building ML systems and the backend infrastructure that supports them.
+        <p className="text-slate-500 font-medium">
+          Machine Learning & MLOps Engineer
         </p>
-      </div>
 
-      {/* Navigation Links */}
-      <div className="flex gap-8 pb-8 border-b border-slate-300">
+        <p className="mt-4 text-slate-700 leading-relaxed max-w-xl">
+          Building machine learning systems, backend infrastructure,
+          and developer tools.
+        </p>
+      </section>
+
+      {/* Navigation */}
+      <nav className="flex gap-8 pb-8 border-b border-slate-300">
         <a
           href="/articles"
-          className="text-slate-800 font-semibold text-lg tracking-wide hover:text-slate-500 underline underline-offset-4 decoration-slate-400"
+          className="
+            text-lg
+            font-medium
+            text-sky-800
+            underline
+            underline-offset-4
+            decoration-sky-500
+            hover:text-sky-950
+            hover:decoration-sky-800
+            transition-colors
+          "
         >
           Articles
         </a>
+
         <a
           href="/projects"
-          className="text-slate-800 font-semibold text-lg tracking-wide hover:text-slate-500 underline underline-offset-4 decoration-slate-400"
+          className="
+            text-lg
+            font-medium
+            text-sky-800
+            underline
+            underline-offset-4
+            decoration-sky-500
+            hover:text-sky-950
+            hover:decoration-sky-800
+            transition-colors
+          "
         >
           Projects
         </a>
-      </div>
+      </nav>
 
-      <p className="text-lg md:text-base text-slate-600 leading-relaxed -mb-4">
-        If you&apos;re working on something interesting in ML or backend
-        systems, I&apos;d like to hear about it.
-      </p>
+      {/* Short Note */}
+      <section>
+        <p className="text-slate-700 leading-relaxed">
+          If you're working on something interesting in ML or backend systems, I'd like to hear about it.
+        </p>
+      </section>
 
       {/* Contact */}
-      <div className="flex flex-col gap-3 pt-4 border-t border-slate-300">
-        <span className="text-sm tracking-widest uppercase text-slate-500 font-medium">
+      <section className="pt-4 border-t border-slate-300">
+        <p className="text-xs font-semibold tracking-[0.2em] uppercase text-slate-500 mb-4">
           Contact
-        </span>
-        <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+        </p>
+
+        <div className="flex flex-wrap gap-x-6 gap-y-2">
           <a
             href="mailto:akinsanyajoel82@gmail.com"
-            className="text-slate-800 font-medium hover:text-slate-500 underline underline-offset-4 decoration-slate-400"
+            className="
+              text-sky-800
+              underline
+              underline-offset-4
+              decoration-sky-500
+              hover:text-sky-950
+            "
           >
             Email
           </a>
+
           <a
             href="https://twitter.com/Akinsanya__Joel"
             target="_blank"
-            className="text-slate-800 font-medium hover:text-slate-500 underline underline-offset-4 decoration-slate-400"
+            rel="noopener noreferrer"
+            className="
+              text-sky-800
+              underline
+              underline-offset-4
+              decoration-sky-500
+              hover:text-sky-950
+            "
           >
             Twitter
           </a>
+
           <a
             href="https://www.linkedin.com/in/akinsanya-joel-1a5b51168/"
             target="_blank"
-            className="text-slate-800 font-medium hover:text-slate-500 underline underline-offset-4 decoration-slate-400"
+            rel="noopener noreferrer"
+            className="
+              text-sky-800
+              underline
+              underline-offset-4
+              decoration-sky-500
+              hover:text-sky-950
+            "
           >
             LinkedIn
           </a>
+
           <a
             href="https://github.com/kiojoel"
             target="_blank"
-            className="text-slate-800 font-medium hover:text-slate-500 underline underline-offset-4 decoration-slate-400"
+            rel="noopener noreferrer"
+            className="
+              text-sky-800
+              underline
+              underline-offset-4
+              decoration-sky-500
+              hover:text-sky-950
+            "
           >
             GitHub
           </a>
         </div>
-      </div>
+      </section>
 
-    </div>
+    </main>
   );
 }
