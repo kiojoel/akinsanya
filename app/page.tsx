@@ -26,8 +26,7 @@ export default function Home() {
         </p>
 
         <p className="mt-4 text-slate-700 leading-relaxed max-w-xl">
-          Building machine learning systems, backend infrastructure,
-          and developer tools.
+          Building machine learning systems.
         </p>
       </section>
 
@@ -71,7 +70,7 @@ export default function Home() {
       {/* Short Note */}
       <section>
         <p className="text-slate-700 leading-relaxed">
-          If you&apos;re working on something interesting in ML or backend systems, I&#39;d like to hear about it.
+          If you&apos;re working on something interesting in Machine Learning I&#39;d like to hear about it.
         </p>
       </section>
 
