@@ -26,7 +26,7 @@ export default function Home() {
         </p>
 
         <p className="mt-4 text-slate-700 leading-relaxed max-w-xl">
-          Building machine learning systems.
+          Building ML systems, MLOps platforms, and backend services.
         </p>
       </section>
 
@@ -64,6 +64,22 @@ export default function Home() {
           "
         >
           Projects
+        </a>
+        <a
+          href="/lab"
+          className="
+            text-lg
+            font-medium
+            text-sky-800
+            underline
+            underline-offset-4
+            decoration-sky-500
+            hover:text-sky-950
+            hover:decoration-sky-800
+            transition-colors
+          "
+        >
+          Lab
         </a>
       </nav>
 
